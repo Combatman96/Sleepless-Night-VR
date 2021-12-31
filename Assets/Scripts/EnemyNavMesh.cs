@@ -16,4 +16,5 @@ public class EnemyNavMesh : MonoBehaviour
     {
         navMeshAgent.destination = target.position;
     }
+
 }

@@ -32,15 +32,19 @@ public class PlayerMovements : MonoBehaviour
         {
             Vector3 move = Camera.main.transform.forward;
             move.y = 0;
-            Debug.Log(move);
-
             controller.Move(move * speed * Time.deltaTime);
         }
-
-        Debug.Log(Input.touchCount);
-        
+       
         //Gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //This is how it end
+        if(other.tag == "Enemy")
+            Debug.Log("Hello Oh no");
+    }
+
 }
