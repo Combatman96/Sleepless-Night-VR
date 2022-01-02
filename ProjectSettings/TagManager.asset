@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - FlickeringLight
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,11 +15,11 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
+  - Walls
+  - Obstacle
   - 
   - 
   - 
