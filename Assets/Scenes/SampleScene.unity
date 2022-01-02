@@ -4639,6 +4639,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 512
+  flashLight: {fileID: 1110280384}
 --- !u!23 &482915086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5016,7 +5017,7 @@ MonoBehaviour:
   raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  maxRaycastHits: 1
+  maxRaycastHits: 14
 --- !u!223 &534669907
 Canvas:
   m_ObjectHideFlags: 0
@@ -7690,7 +7691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826780792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
@@ -15660,7 +15661,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110280382}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -26527,7 +26528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1892
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26869,7 +26870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469694, guid: 41d1cac196452694fb10f2476db79e6e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469694, guid: 41d1cac196452694fb10f2476db79e6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26927,6 +26928,110 @@ Transform:
   m_Father: {fileID: 482915088}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1651152543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 80580782}
+    m_Modifications:
+    - target: {fileID: 132238, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_Name
+      value: Flashlight_GameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0177
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2017
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.63699096
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.30698943
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.30698943
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.63699096
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 38.538002
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5853
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.58530015
+      objectReference: {fileID: 0}
+    - target: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.58530015
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+--- !u!1 &1651152544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132238, guid: 6241ef40758dd404b91e848e07dda193,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651152543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1651152545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651152544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 482915085}
+          m_MethodName: TurnOnFlashLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!43 &1653865463
 Mesh:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class PlayerMovements : MonoBehaviour
     public float gravity = -9.81f;
 
     
+
     [Header("For Ground Checking")]
     public Transform groundCheck;
     public float groundDistance = 0.2f;
@@ -15,6 +16,10 @@ public class PlayerMovements : MonoBehaviour
     bool isGrounded;
 
     private Vector3 velocity;
+
+
+    [Header("Flash Light")]
+    public Light flashLight;
 
     // Update is called once per frame
     void Update()
@@ -45,6 +50,10 @@ public class PlayerMovements : MonoBehaviour
         //This is how it end
         if(other.tag == "Enemy")
             Debug.Log("Hello Oh no");
+    }
+
+    public void TurnOnFlashLight(){
+        flashLight.enabled = true;
     }
 
 }
