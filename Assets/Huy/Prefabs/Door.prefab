@@ -90,7 +90,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4994801913139699524}
-  - component: {fileID: 4994801913139699525}
   - component: {fileID: 7514963427619487967}
   - component: {fileID: 4031520251549834982}
   m_Layer: 0
@@ -114,19 +113,6 @@ Transform:
   m_Father: {fileID: 4994801912103165202}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4994801913139699525
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4994801913139699547}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7514963427619487967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 4994801912103165201}
   model: {fileID: 4994801911866271519}
+  inventoryLabel: {fileID: 0}
   keyId: 0
+  inventory: {fileID: 0}
 --- !u!82 &4031520251549834982
 AudioSource:
   m_ObjectHideFlags: 0
@@ -149,11 +137,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4994801913139699547}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b02bacbfa8c88b54e98049b02070eb32, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

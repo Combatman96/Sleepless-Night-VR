@@ -1,39 +1,52 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using TMPro;
 public class Door : MonoBehaviour
 {
     [Header("Related GameObjects")]
     public GameObject parent;
     public GameObject model;
+    public TextMeshProUGUI inventoryLabel;
     private Animator animator;
+
+    private AudioSource doorSfx;
 
     [Header("Properties")]
     public int /* Item */ keyId;
+    public Inventory inventory;
     private bool is_unlocked = false;
 
     void Start()
     {
         animator = parent.GetComponent<Animator>();
+        doorSfx = GetComponent<AudioSource>();
     }
 
-    void Update()
+    public void OpenTheDoor()
     {
-    }
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        if(collider.gameObject.tag == "Player" && !is_unlocked /* && Player holds keyId */) // Player must have Rigidbody
-        {
-            Debug.Log("Door unlocked");
-            is_unlocked = true;
+        if(inventory.getKey(keyId)){
             animator.SetBool("is_unlocked", true);
-            GetComponent<AudioSource>().enabled = true;
+            doorSfx.Play();
+            inventory.DiscardKey(keyId);
         }
-        else
-        {
-            Debug.Log("Door locked");
+        else{
+            inventoryLabel.text = "Door locked";
         }
     }
+
+    // private void OnTriggerEnter(Collider collider)
+    // {
+    //     if(collider.gameObject.tag == "Player" && !is_unlocked /* && Player holds keyId */) // Player must have Rigidbody
+    //     {
+    //         Debug.Log("Door unlocked");
+    //         is_unlocked = true;
+    //         animator.SetBool("is_unlocked", true);
+    //         GetComponent<AudioSource>().enabled = true;
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("Door locked");
+    //     }
+    // }
+
+
 }
