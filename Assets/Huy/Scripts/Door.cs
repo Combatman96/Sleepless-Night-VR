@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
     public GameObject parent;
     public GameObject model;
     public TextMeshProUGUI inventoryLabel;
+    public Collider boxCollider;
     private Animator animator;
 
     private AudioSource doorSfx;
@@ -27,6 +28,7 @@ public class Door : MonoBehaviour
             animator.SetBool("is_unlocked", true);
             doorSfx.Play();
             inventory.DiscardKey(keyId);
+            boxCollider.enabled = false;
         }
         else{
             inventoryLabel.text = "Door locked";
