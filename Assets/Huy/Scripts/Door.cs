@@ -13,7 +13,6 @@ public class Door : MonoBehaviour
     public bool unlocked = false;
     public int /* Item */ keyId;
     public Inventory inventory;
-    private bool is_unlocked = false;
 
     void Start()
     {
