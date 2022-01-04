@@ -128,6 +128,7 @@ MonoBehaviour:
   parent: {fileID: 4994801912103165201}
   model: {fileID: 4994801911866271519}
   inventoryLabel: {fileID: 0}
+  boxCollider: {fileID: 0}
   keyId: 0
   inventory: {fileID: 0}
 --- !u!82 &4031520251549834982
@@ -291,6 +292,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e145d13eb2c26b149b5772a66978dda4, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e145d13eb2c26b149b5772a66978dda4, type: 3}
+      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: e145d13eb2c26b149b5772a66978dda4, type: 3}
