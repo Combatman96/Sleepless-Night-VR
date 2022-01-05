@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
                 temp = "Bedroom key";
                 break;
             case 1:
-                temp = "Fuzebox key";
+                temp = "Basement key";
                 break;
             case 2:
                 temp = "Main drawer key";
