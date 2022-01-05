@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovements : MonoBehaviour
 {
@@ -49,7 +50,10 @@ public class PlayerMovements : MonoBehaviour
     {
         //This is how it end
         if(other.tag == "Enemy")
+        {
             Debug.Log("Hello Oh no");
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
 
     public void TurnOnFlashLight(){
