@@ -1969,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.736641
+      value: 3.32
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1977,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 65.944916
+      value: 65.95
       objectReference: {fileID: 0}
     - target: {fileID: 417992, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2235,7 +2235,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52842
+  m_Name: pb_Mesh25602
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2564,7 +2564,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52664
+  m_Name: pb_Mesh25536
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2827,7 +2827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &253713357
 Transform:
   m_ObjectHideFlags: 0
@@ -2865,7 +2865,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52058
+  m_Name: pb_Mesh25346
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6422,7 +6422,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51306
+  m_Name: pb_Mesh25082
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7694,6 +7694,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 490214972}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &519441407 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1803835424832026788, guid: 633cf74b7a917114ab31d983ee913530,
+    type: 3}
+  m_PrefabInstance: {fileID: 768349142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21f6cf73de42814ca5fff40559052f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -8022,6 +8034,65 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1185132, y: 2.0849235, z: 0.13779913}
   m_Center: {x: 0, y: -0.0024617317, z: 0}
+--- !u!114 &582951601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582951598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2120501413}
+          m_MethodName: PointerFocus
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2120501413}
+          m_MethodName: PointerOutFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1158537392}
+          m_MethodName: EscapeTheHouse
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1001 &588839510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10129,7 +10200,8 @@ PrefabInstance:
       propertyPath: unlocked
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7484289562230697355, guid: 633cf74b7a917114ab31d983ee913530, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 633cf74b7a917114ab31d983ee913530, type: 3}
 --- !u!4 &773074984 stripped
 Transform:
@@ -10137,6 +10209,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1550465566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &779982961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1803835424832026788, guid: 633cf74b7a917114ab31d983ee913530,
+    type: 3}
+  m_PrefabInstance: {fileID: 1632868863}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21f6cf73de42814ca5fff40559052f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &788899659
 GameObject:
   m_ObjectHideFlags: 0
@@ -10289,7 +10373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51520
+  m_Name: pb_Mesh25170
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10604,6 +10688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: {fileID: 383896367}
+  gameStateMagager: {fileID: 1158537392}
 --- !u!4 &816358626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cc5f8c91179eabb4ea14d0a5b47152d7,
@@ -10629,6 +10714,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 816358625}
           m_MethodName: TurnOnLight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1158537392}
+          m_MethodName: OpendDoorsToHell
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -18007,7 +18103,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52932
+  m_Name: pb_Mesh25626
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -20028,6 +20124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1158537391}
+  - component: {fileID: 1158537392}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -20049,6 +20146,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158537392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158537390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2212619765dcd794f8fffb8f594bb215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainBedroomDoor: {fileID: 779982961}
+  bathroomDoor: {fileID: 519441407}
+  bloods: {fileID: 253713356}
+  enemy: {fileID: 79568569}
+  womanScreem: {fileID: 2089658529}
+  inventory: {fileID: 647577981}
+  itemlabel: {fileID: 1037406032}
 --- !u!1001 &1172131360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20308,6 +20424,47 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1158537392}
+          m_MethodName: LetThereBeEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2120501413}
+          m_MethodName: PointerFocus
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2120501413}
+          m_MethodName: PointerOutFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   delegates: []
 --- !u!65 &1214762291
 BoxCollider:
@@ -20554,7 +20711,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50516
+  m_Name: pb_Mesh24792
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21718,7 +21875,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51172
+  m_Name: pb_Mesh25014
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -32519,7 +32676,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52756
+  m_Name: pb_Mesh25574
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -34679,7 +34836,13 @@ PrefabInstance:
       propertyPath: inventoryLabel
       value: 
       objectReference: {fileID: 1037406032}
-    m_RemovedComponents: []
+    - target: {fileID: 1803835424832026788, guid: 633cf74b7a917114ab31d983ee913530,
+        type: 3}
+      propertyPath: unlocked
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7484289562230697355, guid: 633cf74b7a917114ab31d983ee913530, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 633cf74b7a917114ab31d983ee913530, type: 3}
 --- !u!1001 &1634365358
 PrefabInstance:
@@ -34950,7 +35113,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50728
+  m_Name: pb_Mesh24868
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -35302,7 +35465,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51294
+  m_Name: pb_Mesh25070
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -47229,7 +47392,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51676
+  m_Name: pb_Mesh25232
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -49974,7 +50137,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50142
+  m_Name: pb_Mesh24672
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -50911,6 +51074,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1547266979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2089658528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 5a33c5139d345be4c9b6e405f8fd89b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1565426180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2089658529
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089658528}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 23648020390b5c74ab24a6edbef4a35c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 60
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 50
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2112952506
 PrefabInstance:
   m_ObjectHideFlags: 0

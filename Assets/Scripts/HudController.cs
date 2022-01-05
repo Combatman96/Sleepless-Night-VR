@@ -76,6 +76,9 @@ public class HudController : MonoBehaviour
             case 14:
                 temp = "Milk";
                 break;    
+            case 15:
+                temp = "Exit";
+                break;
         }
         itemLabel.SetText(temp);
     }
