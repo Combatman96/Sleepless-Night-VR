@@ -35,7 +35,7 @@ public class HudController : MonoBehaviour
                 temp = "Bedroom key";
                 break;
             case 1:
-                temp = "Basement key";
+                temp = "Examine"; // the key to the basement is in the tool box
                 break;
             case 2:
                 temp = "Examine"; // the father body contain the key to the living room chest
