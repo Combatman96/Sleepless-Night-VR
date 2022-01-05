@@ -39,8 +39,13 @@ public class Inventory : MonoBehaviour
         inventoryLabel.text = temp;
     }
 
-    public void DiscardKey(){
+    public void DiscardKey(int keyId){
         inventoryLabel.text = "";
+        keys[keyId] = false;
+    }
+
+    public bool getKey(int keyid){
+        return keys[keyid];
     }
 
 }
