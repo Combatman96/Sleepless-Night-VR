@@ -101,7 +101,7 @@ public class HudController : MonoBehaviour
                 details = "Dad looks younger in the photo.";
                 break;
             case 10:
-                details = "Did I forget to close the window? Can't remenber.";
+                details = "Did I forget to close the window? Can't remember.";
                 break;
             case 11:
                 details = "Weird! One is missing.";
