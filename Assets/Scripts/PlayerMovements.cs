@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovements : MonoBehaviour
 {
@@ -6,8 +7,7 @@ public class PlayerMovements : MonoBehaviour
     public CharacterController controller;
     public float speed = 12f;
     public float gravity = -9.81f;
-
-    
+    public AudioSource footStepSFX;
 
     [Header("For Ground Checking")]
     public Transform groundCheck;
@@ -38,18 +38,34 @@ public class PlayerMovements : MonoBehaviour
             Vector3 move = Camera.main.transform.forward;
             move.y = 0;
             controller.Move(move * speed * Time.deltaTime);
+            
+            PlayAudio(true);
         }
+        else PlayAudio(false);
        
         //Gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
 
+    private void PlayAudio(bool isWalking){
+        if(isWalking == true && !footStepSFX.isPlaying)
+        {
+            footStepSFX.Play();
+        }
+        else{
+            footStepSFX.Pause();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //This is how it end
         if(other.tag == "Enemy")
+        {
             Debug.Log("Hello Oh no");
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
 
     public void TurnOnFlashLight(){
