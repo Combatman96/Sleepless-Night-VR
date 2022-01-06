@@ -6901,7 +6901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &383896368
 Transform:
   m_ObjectHideFlags: 0
@@ -18574,7 +18574,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -35710,12 +35710,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1654666318}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1654666321 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 145760, guid: e8e3d84b4df91a24892ed822cd330e12,
-    type: 3}
-  m_PrefabInstance: {fileID: 1654666318}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1654666322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 110076, guid: e8e3d84b4df91a24892ed822cd330e12,
@@ -35735,19 +35729,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000014, y: 0.017348679, z: 0.020940626}
   m_Center: {x: -0.000000014901161, y: -0.0011953862, z: 0.010470307}
---- !u!65 &1654666324
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654666321}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.017348688, y: 0.017348683, z: 0.020940624}
-  m_Center: {x: 0.021163417, y: -0.0011953838, z: 0.010470308}
 --- !u!65 &1654666325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46038,7 +46019,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
