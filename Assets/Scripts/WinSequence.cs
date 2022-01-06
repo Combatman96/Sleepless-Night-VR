@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class WinSequence : MonoBehaviour
@@ -33,8 +34,9 @@ public class WinSequence : MonoBehaviour
         yield return new WaitForSeconds(4);
         textFade2.Play("text1_fade");
 
-        //yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(6);
         //Load back to Title Screen 
-
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        
     }
 }
