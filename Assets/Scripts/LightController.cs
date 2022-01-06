@@ -6,9 +6,14 @@ public class LightController : MonoBehaviour
 
     [SerializeField] private GameStateMagager gameStateMagager;
 
-
-    public void TurnOnLight(){
-        lights.SetActive(true);
-        gameStateMagager.OpendDoorsToHell();
+    private bool used = false;
+    public void TurnOnLight()
+    {
+        if(!used)
+        {
+            lights.SetActive(true);
+            gameStateMagager.OpendDoorsToHell();
+            used = true;
+        }
     }
 }
