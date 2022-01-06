@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 using TMPro;
 
 public class GameStateMagager : MonoBehaviour
@@ -24,7 +25,6 @@ public class GameStateMagager : MonoBehaviour
         womanScreem.Play();
     }
 
-
     public void LetThereBeEnemy()
     {
         enemy.SetActive(true);
@@ -35,7 +35,7 @@ public class GameStateMagager : MonoBehaviour
         if(inventory.getKey(3))
         {
             Debug.Log("OK");
-            SceneManager.LoadScene( 1, LoadSceneMode.Single);
+            SceneManager.LoadScene( 3, LoadSceneMode.Single);
         }
         else
         {
