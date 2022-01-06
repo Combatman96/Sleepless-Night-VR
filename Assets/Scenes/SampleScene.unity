@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.0059739514, g: 0.006152864, b: 0.0072515067, a: 1}
+  m_IndirectSpecularColor: {r: 0.0059739505, g: 0.0061528627, b: 0.0072515034, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -483,7 +483,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.95
-  m_Speed: 1.6
+  m_Speed: 1.7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 200
@@ -17064,7 +17064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 482915089}
-  speed: 5.71
+  speed: 4
   gravity: -9.81
   footStepSFX: {fileID: 1564859403}
   groundCheck: {fileID: 1598011981}
@@ -49203,6 +49203,10 @@ PrefabInstance:
       propertyPath: drawDebugRays
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 723926960, guid: 60270cf52a5e94998a5a335989159738, type: 3}
+      propertyPath: maxReticleDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60270cf52a5e94998a5a335989159738, type: 3}
 --- !u!4 &1451870268 stripped
@@ -63694,7 +63698,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27898
+  m_Name: pb_Mesh29028
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
